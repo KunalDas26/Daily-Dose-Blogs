@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* MAIN CONTAINER SECTION  */
+.container {
+    width: 90vw;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    background-color: #FFF7F1;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* HEADER SECTION  */
+.header-container {
+    margin-bottom: 2.8rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.logoImage {
+    width: 200px;
+    border-radius: 52%;
+}
+
+.content {
+    margin-left: 200px;
+}
+
+.header-title {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: "Briem Hand", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #4793AF;
+}
+
+.header-desc {
+    max-width: 568px;
+    text-align: center;
+    color: rgb(105, 99, 99);
+    margin: 0 auto;
+}
+
+.main-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+}
+
+@media (min-width:346px) {
+    .main-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media (min-width:650px) {
+    .main-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:900px) {
+    .main-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1250px) {
+    .main-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1110px) {
+    .logoImage {
+        width: 140px;
+        border-radius: 52%;
+    }
+}
+
+@media (max-width: 1048px) {
+    .logoImage {
+        width: 100px;
+        border-radius: 52%;
+    }
+
+    .header-title {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:880px) {
+    .header-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:550px) {
+    .logoImage {
+        width: 60px;
+        border-radius: 52%;
+    }
+}
+
+
+/* CARD SECTION  */
+.card-container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(233, 224, 224);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.card-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 7rem;
+}
+
+@media (min-width: 768px) {
+    .card_image_container{
+            height: 12rem;
+    }
+}
+
+.card-image {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.card-title-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card-container:hover .card-image {
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+    color: rgb(25, 23, 23);
+}
+
+.card-title-anchor:hover .card-title {
+    color:rgb(67, 67, 191);
+}
+
+.card-desc {
+    color: rgb(113, 107, 107);
+    font-size: 1rem;
+}
+
+.card-footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    align-items: flex-end;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.author-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.author-avatar-container {
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(150, 147, 147);
+    border-radius: 50%;
+    background-color: rgb(243, 239, 239);
+}
+
+.author-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    color: rgb(38, 38, 149);
+}
+
+.author-date {
+    color: rgb(136, 126, 126);
+}
+
+.card-tag-container {
+    font-size: 0.79rem;
+    border: 1px solid rgb(76, 71, 71);
+    border-radius: 4px;
+    line-height: 1.3rem;
+    padding: 0.25rem 0.5rem;
+    color: grey;
+}
+
+
+/* COPYRIGHT SECTION  */
+
+.copy-right {
+    text-align: center;
+}
+.copy-right-sec{
+	padding: 1.8rem;
+    background: #82074a;
+    color: #fff;
+    text-align: center;
+}
+.copy-right-sec a{
+	color: #fcd462;
+    font-weight: 500;
+}
+a{
+  text-decoration:none;
+}
+
+.copyright {
+    font-size: 18px;
+}
